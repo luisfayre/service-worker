@@ -11,7 +11,10 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.css">
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <link rel="manifest" href="manifest.json">
-        <script src="sw.js"></script>
+        <script src="sw.js">
+            
+            serviceWorkerRegistration.showNotification("title", "options");
+        </script>
 
     </head>
     <body>
